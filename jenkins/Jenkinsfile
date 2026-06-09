@@ -21,15 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
-        stage('Complete') {
+        stage('CompleteNewpipeline') {
             steps {
-                echo 'Job Complete!'
+                echo 'Job Complete for new Pipeline!'
             }
         }
-        stage('Complete1') {
-            steps {
-                echo 'Job Complete1!'
-            }
-        }
+
     }
 }
